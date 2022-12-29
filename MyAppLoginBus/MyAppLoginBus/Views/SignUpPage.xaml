@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyAppLoginBus.Views.SignUpPage">
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label x:Name="Lbl_UserName" Text="Please enter user name" />
+        <Entry x:Name="Entry_UserName" Placeholder="User Name" />
+        <Label x:Name="Lbl_Password" Text="Please enter password" />
+        <Entry x:Name="Entry_Password" IsPassword="True" Placeholder="Password" />
+        <Label x:Name="Lbl_Email" Text="Please enter email address" />
+        <Entry x:Name="Entry_Email" Placeholder="Email" />
+        <Button Text="SignUp!" Clicked="CreateNewUserProcedure" />
+    </StackLayout>
+</ContentPage>
