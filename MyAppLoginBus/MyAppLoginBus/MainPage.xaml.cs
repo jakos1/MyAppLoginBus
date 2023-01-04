@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyAppLoginBus.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,6 +14,14 @@ namespace MyAppLoginBus
         public MainPage()
         {
             InitializeComponent();
+        }
+        public async void SwitchToLogin(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LoginPage());
+        }
+        public async void SwitchToBus(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BusNavMainPage());
         }
     }
 }
