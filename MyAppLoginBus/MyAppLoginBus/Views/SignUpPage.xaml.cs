@@ -60,7 +60,7 @@ namespace MyAppLoginBus.Views
                     cmd.Parameters.Add("@USERNAME", MySqlDbType.VarChar).Value = Entry_UserName.Text;
                     cmd.Parameters.Add("@PASSWORD", MySqlDbType.VarChar).Value = Entry_Password.Text;
                     cmd.Parameters.Add("@EMAIL", MySqlDbType.VarChar).Value = Entry_Email.Text;
-                    cmd.ExecuteNonQueryAsync();
+                    cmd.ExecuteNonQuery();
                     conn.Close();
                     DisplayAlert("Signed up", "Signing up sucsessfull please log in!", "Ok!");
                 }
