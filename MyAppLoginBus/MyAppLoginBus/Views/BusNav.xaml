@@ -2,9 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyAppLoginBus.Views.BusNav">
-    <StackLayout>
-            <Label x:Name="LblTest" Text=""
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Chose a bus" />
+            <Button Text="Bus 1" Clicked="BusSelectedProcedure" />
+            <Button Text="Bus 2" Clicked="BusSelectedProcedure" />
+            <Button Text="Bus 3" Clicked="BusSelectedProcedure" />
+            <Button Text="Bus 4" Clicked="BusSelectedProcedure" />
+            <Button Text="Bus 5" Clicked="BusSelectedProcedure" />
         </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
