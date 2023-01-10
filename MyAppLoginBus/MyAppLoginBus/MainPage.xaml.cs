@@ -21,7 +21,7 @@ namespace MyAppLoginBus
         }
         public async void SwitchToBus(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new BusNavMainPage());
+            await Navigation.PushAsync(new BusNav());
         }
     }
 }

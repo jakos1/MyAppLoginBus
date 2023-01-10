@@ -3,13 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyAppLoginBus.Views.BusNav">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-            <Label Text="Chose a bus" />
-            <Button Text="Bus 1" Clicked="BusSelectedProcedure" />
-            <Button Text="Bus 2" Clicked="BusSelectedProcedure" />
-            <Button Text="Bus 3" Clicked="BusSelectedProcedure" />
-            <Button Text="Bus 4" Clicked="BusSelectedProcedure" />
-            <Button Text="Bus 5" Clicked="BusSelectedProcedure" />
-        </StackLayout>
+        <ListView x:Name="MyListView" ItemSelected="MyListView_ItemsSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout HorizontalOptions="StartAndExpand" Spacing="0">
+                            <Label Text="{Binding NameNumber}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
     </ContentPage.Content>
 </ContentPage>
